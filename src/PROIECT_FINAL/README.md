@@ -1,0 +1,4 @@
+Acest proiect este o aplicație Java pentru gestionarea unei colecții de medici. Aplicația oferă funcționalități precum adăugarea, ștergerea și actualizarea informațiilor despre medici, precum și sortarea și filtrarea acestora.
+In cadrul proiectului am folosit urmatoarele design pattern-uri:
+-Strategy Pattern Am folosit acest pattern pentru a implementa diferite strategii de sortare a listei de doctori. Am creat interfața ISortingStrategy și am definit trei implementări diferite: SortByName, SortBySpecialization și SortBySalary. Astfel, putem schimba strategia de sortare în timpul execuției, fără a modifica codul existent.
+-Iterator Pattern: Am implementat acest pattern pentru a itera prin colecția de doctori. Am creat interfața ICollectionIterator și am implementat-o în clasa DoctorRepository. Acest lucru ne permite să parcurgem elementele colecției într-un mod standardizat și simplu.
